@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GreenSpace — Project 2 | DecodeLabs</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+  ========================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+
+        <!-- Logo -->
+        <a href="#" class="nav-logo" aria-label="GreenSpace Home">
+          <span>🌿</span> GreenSpace
+        </a>
+
+        <button
+          class="nav-toggle"
+          popovertarget="nav-menu"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          ☰
+        </button>
+
+        <div class="nav-menu" id="nav-menu" popover>
+          <div class="nav-menu-inner">
+            <a href="#features"     class="nav-link">About</a>
+            <a href="#plants"       class="nav-link">Shop</a>
+            <a href="#testimonials" class="nav-link">Reviews</a>
+            <a href="#newsletter"   class="nav-link">Blog</a>
+            <a href="#newsletter"   class="nav-link nav-cta">Get Started</a>
+          </div>
+        </div>
+
+        <!-- 🛒 CART ICON with item count badge -->
+        <button class="cart-icon" id="cartIcon" aria-label="Shopping cart">
+          🛒
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Left: Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">🌱 New arrivals just landed</div>
+
+          <h1 class="hero-title">
+            Bring Nature<br>
+            <span class="highlight">Home With You</span>
+          </h1>
+
+          <p class="hero-desc">
+            Curated indoor plants for every space, skill level, and lifestyle.
+            We make it easy to grow green even if you've killed a cactus before.
+          </p>
+
+          <!-- Flexbox row of buttons (wraps on tiny screens) -->
+          <div class="hero-actions">
+            <a href="#plants" class="btn btn-primary">🛍️ Shop Plants</a>
+            <a href="#features" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Right: Visual with floating stats -->
+        <div class="hero-visual">
+          <div class="hero-img-wrap">🌿</div>
+
+          <div class="hero-stat">
+            <div>
+              <div class="hero-stat-number">2k+</div>
+              <div class="hero-stat-label">Happy<br>plant parents</div>
+            </div>
+            <span style="font-size:1.8rem">🏡</span>
+          </div>
+
+          <div class="hero-stat">
+            <span style="font-size:1.8rem">⭐</span>
+            <div>
+              <div class="hero-stat-number">4.9</div>
+              <div class="hero-stat-label">Average<br>rating</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-header">
+        <span class="section-tag">Why GreenSpace</span>
+        <h2 class="section-title">Everything you need<br>to thrive</h2>
+        <p class="section-subtitle">
+          We believe everyone deserves a green corner.
+          That's why we make plant parenthood genuinely easy.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <span class="feature-icon">🚚</span>
+          <h3 class="feature-title">Free Doorstep Delivery</h3>
+          <p class="feature-text">
+            Your plants arrive safely packed in eco-friendly packaging,
+            right to your door. No traffic, no hassle.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">👩‍🌾</span>
+          <h3 class="feature-title">Expert Care Guides</h3>
+          <p class="feature-text">
+            Every plant comes with a simple, illustrated care card written
+            by botanists in plain English, not jargon.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">♻️</span>
+          <h3 class="feature-title">Eco-Friendly Pots</h3>
+          <p class="feature-text">
+            Our pots are made from 100% recycled materials.
+            Good for your home, good for the planet.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">💬</span>
+          <h3 class="feature-title">Plant SOS Support</h3>
+          <p class="feature-text">
+            Is your plant looking sad? Message us a photo.
+            Our team will diagnose and help revive it — free!
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="plants" id="plants">
+    <div class="container">
+      <div class="plants-header">
+        <div>
+          <span class="section-tag">Our Collection</span>
+          <h2 class="section-title">Hand-picked favourites</h2>
+        </div>
+        <a href="#" class="btn btn-outline" style="align-self:flex-end">View All →</a>
+      </div>
+
+      <div class="plants-grid">
+
+        <article class="plant-card">
+          <div class="plant-img plant-img-1">🪴</div>
+          <div class="plant-body">
+            <p class="plant-tag">Beginner Friendly</p>
+            <h3 class="plant-name">Monstera Deliciosa</h3>
+            <p class="plant-desc">
+              The iconic split-leaf plant. Thrives in indirect light,
+              water once a week, and it basically takes care of itself.
+            </p>
+            <div class="plant-footer">
+              <span class="plant-price">$400</span>
+              <button class="plant-btn" data-name="Monstera Deliciosa" data-emoji="🪴" data-price="400">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="plant-card">
+          <div class="plant-img plant-img-2">🌵</div>
+          <div class="plant-body">
+            <p class="plant-tag">Low Maintenance</p>
+            <h3 class="plant-name">Golden Barrel Cactus</h3>
+            <p class="plant-desc">
+              Forget to water it. it won't mind. Perfect for busy people
+              who still want a green companion on their desk.
+            </p>
+            <div class="plant-footer">
+              <span class="plant-price">$300</span>
+              <button class="plant-btn" data-name="Golden Barrel Cactus" data-emoji="🌵" data-price="300">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="plant-card">
+          <div class="plant-img plant-img-3">🌸</div>
+          <div class="plant-body">
+            <p class="plant-tag">Air Purifier</p>
+            <h3 class="plant-name">Peace Lily</h3>
+            <p class="plant-desc">
+              Beautiful white blooms that also clean your air.
+              Droops dramatically when thirsty, it tells you when to water it!
+            </p>
+            <div class="plant-footer">
+              <span class="plant-price">$250</span>
+              <button class="plant-btn" data-name="Peace Lily" data-emoji="🌸" data-price="250">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="plant-card">
+          <div class="plant-img plant-img-4">🪷</div>
+          <div class="plant-body">
+            <p class="plant-tag">Pet Safe</p>
+            <h3 class="plant-name">Boston Fern</h3>
+            <p class="plant-desc">
+              Lush, full, and completely safe for cats and dogs.
+              Loves humidity — great in bathrooms or kitchens.
+            </p>
+            <div class="plant-footer">
+              <span class="plant-price">$500</span>
+              <button class="plant-btn" data-name="Boston Fern" data-emoji="🪷" data-price="500">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="sidebar-section" id="testimonials">
+    <div class="container">
+      <div class="sidebar-layout">
+
+        <!-- Main content -->
+        <div>
+          <span class="section-tag">Real Stories</span>
+          <h2 class="section-title" style="margin-bottom:var(--space-lg)">
+            What plant parents say
+          </h2>
+
+          <div class="testimonials-list">
+
+            <div class="testimonial-card">
+              <span class="testimonial-quote">"</span>
+              <p class="testimonial-text">
+                I have killed every plant I've ever owned. GreenSpace sent me a Peace Lily
+                with a care card so simple, even I managed to keep it alive for 8 months now!
+                The Plant SOS chat literally saved my fern last month.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar avatar-1">🙋‍♀️</div>
+                <div>
+                  <p class="author-name">Priya Sharma</p>
+                  <p class="author-role">Software Developer, Ogun State</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <span class="testimonial-quote">"</span>
+              <p class="testimonial-text">
+                Ordered a Monstera on a whim. It arrived beautifully packed, no leaves
+                damaged. My apartment looks like a jungle now and honestly? I am thriving.
+                Will be ordering more for my office.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar avatar-2">🧑</div>
+                <div>
+                  <p class="author-name">Arjun Mehta</p>
+                  <p class="author-role">Product Designer, Abuja</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <span class="testimonial-quote">"</span>
+              <p class="testimonial-text">
+                The eco-friendly packaging is a lovely touch. You can tell they actually
+                care about sustainability. My Boston Fern is my dog's new best friend.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar avatar-3">👩</div>
+                <div>
+                  <p class="author-name">Sneha Kulkarni</p>
+                  <p class="author-role">Teacher, Lagos State</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" aria-label="Plant care tips">
+
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Quick Care Tips 🌱</h3>
+            <p class="widget-tip">Water when the top inch of soil feels dry, not on a schedule.</p>
+            <p class="widget-tip">Most houseplants prefer bright indirect light, not direct sun.</p>
+            <p class="widget-tip">Yellow leaves = overwatering. Brown tips = underwatering.</p>
+            <p class="widget-tip">Wipe dusty leaves with a damp cloth once a month.</p>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Beginner Picks 🏆</h3>
+            <p class="widget-tip">Pothos — practically immortal.</p>
+            <p class="widget-tip">Snake Plant — ignore it, it thrives.</p>
+            <p class="widget-tip">ZZ Plant — low light, low water.</p>
+            <p class="widget-tip">Spider Plant — grows babies you can give to friends!</p>
+          </div>
+
+          <div class="sidebar-widget" style="background: var(--color-primary-light); border-color: var(--color-primary);">
+            <p style="font-size:var(--fs-sm); color:var(--color-primary); font-weight:700; margin-bottom:0.5rem;">
+              🎁 First order?
+            </p>
+            <p style="font-size:var(--fs-sm); color:var(--color-text);">
+              Use code <strong>GREENSTART</strong> for 10% off your first plant!
+            </p>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       NEWSLETTER / CTA SECTION
+       Form Layout: Flexbox (stacked → row)
+  ========================================== -->
+  <section class="cta-section" id="newsletter">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Weekly plant wisdom, in your inbox 🌿</h2>
+        <p class="cta-desc">
+          Join 2,000+ plant parents. Get care tips, seasonal guides, and exclusive deals.
+        </p>
+
+        <div class="cta-form" role="form" aria-label="Newsletter signup">
+          <input
+            class="cta-input"
+            type="email"
+            placeholder="your@email.com"
+            aria-label="Email address"
+          />
+          <button class="cta-submit" type="button">Subscribe →</button>
+        </div>
+
+        <p style="color:rgba(255,255,255,0.5); font-size:var(--fs-sm); margin-top:var(--space-sm);">
+          No spam, ever. Unsubscribe anytime.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER
+       Layout: CSS Grid (1 → 2 → 4 columns)
+  ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span>🌿</span> GreenSpace
+          </a>
+          <p class="footer-desc">
+            Making the world a greener, calmer, more beautiful place
+            one plant at a time. Based in Lagos, shipping across Nigeria.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Shop</p>
+          <ul class="footer-links">
+            <li><a href="#">Indoor Plants</a></li>
+            <li><a href="#">Succulents</a></li>
+            <li><a href="#">Air Purifiers</a></li>
+            <li><a href="#">Pet Safe</a></li>
+            <li><a href="#">Gift Boxes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Help</p>
+          <ul class="footer-links">
+            <li><a href="#">Care Guides</a></li>
+            <li><a href="#">Plant SOS</a></li>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Connect</p>
+          <ul class="footer-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 GreenSpace. Made with 🌿 in Nigeria.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="debug-bar" aria-hidden="true"></div>
+
+  <!-- ==========================================
+       🛒 CART DRAWER
+       Slides in from the right when cart icon is clicked.
+       Overlay dims the rest of the page behind it.
+  ========================================== -->
+
+  <!-- Dark overlay behind the drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- The drawer itself -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+
+    <!-- Drawer header -->
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">🛒 Your Cart <span class="cart-drawer-count" id="drawerCount">(0 items)</span></h2>
+      <button class="cart-drawer-close" id="cartDrawerClose" aria-label="Close cart">✕</button>
+    </div>
+
+    <!-- Item list — filled by JavaScript -->
+    <div class="cart-drawer-body">
+      <ul class="cart-items-list" id="cartItemsList">
+        <!-- Items injected here by JS -->
+      </ul>
+
+      <!-- Empty state (shown when cart is empty) -->
+      <div class="cart-empty" id="cartEmpty">
+        <span class="cart-empty-icon">🌱</span>
+        <p>Your cart is empty.</p>
+        <p>Add some plants to get started!</p>
+      </div>
+    </div>
+
+    <!-- Drawer footer: total + checkout button -->
+    <div class="cart-drawer-footer" id="cartFooter">
+      <div class="cart-total">
+        <span>Total</span>
+        <span class="cart-total-amount" id="cartTotal">₹0</span>
+      </div>
+      <a href="./index1.html" class="btn btn-primary cart-checkout-btn">Checkout →</a>
+    </div>
+
+  </aside>
+
+  <!-- ==========================================
+       🍞 TOAST NOTIFICATION
+       Small popup that confirms an item was added.
+  ========================================== -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast-emoji" id="toastEmoji">🪴</span>
+    <div class="toast-text">
+      <strong id="toastName">Monstera Deliciosa</strong>
+      <span>Added to cart!</span>
+    </div>
+    <button class="toast-close" id="toastClose" aria-label="Dismiss">✕</button>
+  </div>
+
+  <!-- ==========================================
+       📜 JAVASCRIPT
+  ========================================== -->
+  <script>
+
+    // ── State ─────────────────────────────────
+    // cart is an array of objects: { name, emoji, price, qty }
+    const cart = [];
+
+    // ── Element references ────────────────────
+    const cartCountEl    = document.getElementById('cartCount');
+    const cartDrawer     = document.getElementById('cartDrawer');
+    const cartOverlay    = document.getElementById('cartOverlay');
+    const cartDrawerClose= document.getElementById('cartDrawerClose');
+    const cartItemsList  = document.getElementById('cartItemsList');
+    const cartEmpty      = document.getElementById('cartEmpty');
+    const cartFooter     = document.getElementById('cartFooter');
+    const drawerCount    = document.getElementById('drawerCount');
+    const cartTotalEl    = document.getElementById('cartTotal');
+    const cartIcon       = document.getElementById('cartIcon');
+    const toast          = document.getElementById('toast');
+    const toastName      = document.getElementById('toastName');
+    const toastEmoji     = document.getElementById('toastEmoji');
+    const toastClose     = document.getElementById('toastClose');
+
+    let toastTimer;
+
+    // ── Open / Close Drawer ───────────────────
+    function openDrawer() {
+      cartDrawer.classList.add('cart-drawer--open');
+      cartOverlay.classList.add('cart-overlay--show');
+      document.body.style.overflow = 'hidden'; // stop page scroll
+    }
+
+    function closeDrawer() {
+      cartDrawer.classList.remove('cart-drawer--open');
+      cartOverlay.classList.remove('cart-overlay--show');
+      document.body.style.overflow = '';
+    }
+
+    cartIcon.addEventListener('click', openDrawer);
+    cartDrawerClose.addEventListener('click', closeDrawer);
+    cartOverlay.addEventListener('click', closeDrawer);
+
+    // Close drawer with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeDrawer();
+    });
+
+    // ── Add to Cart ───────────────────────────
+    function addToCart(name, emoji, price) {
+      // Check if this plant is already in the cart
+      const existing = cart.find(item => item.name === name);
+
+      if (existing) {
+        // Already there — just increase quantity
+        existing.qty++;
+      } else {
+        // New item — push into cart array
+        cart.push({ name, emoji, price, qty: 1 });
+      }
+
+      renderCart();
+    }
+
+    // ── Render Cart ───────────────────────────
+    // Rebuilds the drawer list from the cart array
+    function renderCart() {
+      // Total number of individual items
+      const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+      // Total price
+      const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+      // Update the nav badge
+      cartCountEl.textContent = totalItems;
+
+      // Bounce the badge
+      cartCountEl.classList.remove('bounce');
+      void cartCountEl.offsetWidth;
+      cartCountEl.classList.add('bounce');
+
+      // Update drawer header count
+      drawerCount.textContent = '(' + totalItems + (totalItems === 1 ? ' item)' : ' items)');
+
+      // Update total price
+      cartTotalEl.textContent = '₹' + totalPrice.toLocaleString('en-IN');
+
+      // Show/hide empty state and footer
+      if (cart.length === 0) {
+        cartEmpty.style.display  = 'flex';
+        cartFooter.style.display = 'none';
+        cartItemsList.innerHTML  = '';
+        return;
+      }
+
+      cartEmpty.style.display  = 'none';
+      cartFooter.style.display = 'block';
+
+      // Build the list HTML
+      cartItemsList.innerHTML = cart.map((item, index) => `
+        <li class="cart-item">
+          <span class="cart-item-emoji">${item.emoji}</span>
+          <div class="cart-item-info">
+            <p class="cart-item-name">${item.name}</p>
+            <p class="cart-item-price">₹${(item.price * item.qty).toLocaleString('en-IN')}</p>
+          </div>
+          <div class="cart-item-qty">
+            <button class="qty-btn" data-action="decrease" data-index="${index}">−</button>
+            <span>${item.qty}</span>
+            <button class="qty-btn" data-action="increase" data-index="${index}">+</button>
+          </div>
+          <button class="cart-item-remove" data-action="remove" data-index="${index}" aria-label="Remove ${item.name}">🗑️</button>
+        </li>
+      `).join('');
+    }
+
+    // ── Handle all clicks ─────────────────────
+    document.addEventListener('click', function(e) {
+
+      // ① "Add to Cart" plant button
+      if (e.target.classList.contains('plant-btn')) {
+        const name  = e.target.dataset.name  || 'Plant';
+        const emoji = e.target.dataset.emoji || '🌿';
+        const price = parseInt(e.target.dataset.price) || 0;
+
+        addToCart(name, emoji, price);
+
+        // Toast notification
+        toastName.textContent  = name;
+        toastEmoji.textContent = emoji;
+        toast.classList.add('toast--show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove('toast--show'), 3000);
+
+        // Button feedback
+        const btn = e.target;
+        btn.textContent = 'Added ✓';
+        btn.style.background = '#2d6a4f';
+        setTimeout(() => {
+          btn.textContent = 'Add to Cart';
+          btn.style.background = '';
+        }, 1500);
+      }
+
+      // ② Quantity + / − buttons inside the drawer
+      if (e.target.classList.contains('qty-btn')) {
+        const idx    = parseInt(e.target.dataset.index);
+        const action = e.target.dataset.action;
+
+        if (action === 'increase') {
+          cart[idx].qty++;
+        } else if (action === 'decrease') {
+          cart[idx].qty--;
+          // Remove from cart if qty hits 0
+          if (cart[idx].qty <= 0) cart.splice(idx, 1);
+        }
+        renderCart();
+      }
+
+      // ③ Remove 🗑️ button
+      if (e.target.classList.contains('cart-item-remove')) {
+        const idx = parseInt(e.target.dataset.index);
+        cart.splice(idx, 1);
+        renderCart();
+      }
+    });
+
+    // Close toast X button
+    toastClose.addEventListener('click', function() {
+      toast.classList.remove('toast--show');
+      clearTimeout(toastTimer);
+    });
+
+    // First render (empty state)
+    renderCart();
+
+  </script>
+
+</body>
+</html>
